@@ -1,0 +1,9 @@
+plx_ML  0.0001221116995
+pmra_ML  0
+pmdec_ML  0
+chisq_sep  6.723496188
+chisq_PA  91.21374193
+chisq_H  0
+chisq_HG  0
+chisq_G  0
+RV_ZP_0_ML  0

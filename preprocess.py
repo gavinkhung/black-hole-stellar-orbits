@@ -10,15 +10,16 @@ processed = Table(
 
 def to_sep(ra, dec, ra_err, dec_err):
     # this is exact, assuming 0 correlation between ra and dec.
-    sep = np.sqrt(ra ** 2 + dec ** 2)
-    sep_err = np.sqrt((ra * ra_err) ** 2 + (dec * dec_err) ** 2) / sep
+    sf = (10 ** (4.0/3))
+    sep = np.sqrt(ra ** 2 + dec ** 2) / sf
+    sep_err = (np.sqrt((ra * ra_err) ** 2 + (dec * dec_err) ** 2) / sep)/sf
     return sep, sep_err
 
 
 def to_pa(ra, dec, ra_err, dec_err):
     pa = np.arctan2(ra, dec)
     # this pa error is approximate, but wayyy simpler than the full fledged solution.
-    pa_err = np.arctan2((ra_err + dec_err) / 2, np.sqrt(ra ** 2 + dec ** 2))
+    pa_err = (np.arctan2((ra_err + dec_err) / 2, np.sqrt(ra ** 2 + dec ** 2)))
     return (pa * 180 / np.pi + 360) % 360, (pa_err * 180 / np.pi + 360) % 360
 
 

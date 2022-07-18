@@ -1,0 +1,21 @@
+# Each row: mean and standard deviation of the normal distribution
+# used to initialize the parameter given in the comment.  For the
+# masses and semimajor axes of the companions, and for the jitter, the
+# distributions used are lognormal.  In these cases the standard
+# deviations are of the natural log about the distribution peak.  In
+# all cases, realizations of the distributions that result in
+# unphysical parameters or combinations of parameters will be
+# automatically adjusted.
+#
+   5          0.3   # jitter (m/s, lognormal)
+   415.4      1.4   # primary mass (Msun)
+#
+# Companion #1 (indexed as companion 0 in relative astrometry)
+#
+   0.0014       0.01   # mass (Msun, lognormal)
+   46         	0.3     # semimajor axis (AU, lognormal)
+   0        1   # sqrt(ecc)*sin(omega)
+   0        1   # sqrt(ecc)*cos(omega)
+   2.335564698        0.1   # inclination (radians, valid region 0->pi)
+   0        1   # long asc node (rad, valid -pi->3pi)
+   0        1   # long at reference epoch (rad, valid -pi->3pi)
