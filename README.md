@@ -8,6 +8,6 @@ The astrometric measurements of S0-2 are from https://arxiv.org/pdf/1607.05726.p
 
 ## Program Output
 
-![S2 Orbit Fit](./output/plots/astrometric_orbit_S2.pdf)
+![S2 Orbit Fit](./output/plots/astrometric_orbit_S2.png)
 
 
