@@ -10,6 +10,11 @@ The astrometric measurements of S0-2 are from https://arxiv.org/pdf/1607.05726.p
 
 ![S2 Orbit Fit](./output/plots/astrometric_orbit_S2.png)
 
+## Usuage
+```
+fit_orbit --output-dir output/chains output/config_s2.ini
+plot_orbit --output-dir output/plots output/config_s2.ini 
+```
 
 ## License
 
